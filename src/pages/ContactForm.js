@@ -29,10 +29,12 @@ function ContactForm() {
 
           {/* Rechter sectie met contactformulier */}
           <div className="col-md-6">
-            <form
-              action="https://formsubmit.co/3dd4cf47ae9aa7fa832ab99a96c0c464"
-              method="POST"
-            >
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="aeb23ebc-d527-4989-963c-52b294d46c55"
+              ></input>
               <input
                 type="text"
                 name="name"
@@ -74,7 +76,8 @@ function ContactForm() {
                   required
                 ></textarea>
               </div>
-
+{/* Honeypot Spam Protection */}
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"></input>
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
