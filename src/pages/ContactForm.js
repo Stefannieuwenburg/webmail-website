@@ -29,7 +29,10 @@ function ContactForm() {
 
           {/* Rechter sectie met contactformulier */}
           <div className="col-md-6">
-            <form>
+            <form
+              action="https://formsubmit.co/3dd4cf47ae9aa7fa832ab99a96c0c464"
+              method="POST"
+            >
               <input
                 type="text"
                 name="name"
