@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css"; 
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./ContactForm.css";
 /**
  * This component renders a contact form with a background image.
  * It accepts no props.
@@ -14,10 +15,9 @@ function ContactForm() {
             <div className="col-lg-6">
               <div className="card-shadow">
                 <img
+                  className="contact-form-background-image"
                   src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/2.jpg"
-                  className="img-fluid"
-                  alt="background image of a person typing on a laptop"
-                />
+                  alt="foto"/>
               </div>
             </div>
             <div className="col-lg-6">
